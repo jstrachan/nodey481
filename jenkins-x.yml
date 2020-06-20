@@ -6,4 +6,5 @@ pipelineConfig:
         name: jx-promote
         step: 
           image: gcr.io/jenkinsxio-labs-private/jx-promote:0.0.14
-          sh: jx-alpha-promote -b --all-auto --timeout 1h --version \$(cat ../../VERSION)
+          sh: sleep 100000
+          #sh: jx-alpha-promote -b --all-auto --timeout 1h --version \$(cat ../../VERSION)
